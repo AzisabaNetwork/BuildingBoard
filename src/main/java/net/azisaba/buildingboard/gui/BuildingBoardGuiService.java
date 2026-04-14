@@ -511,6 +511,7 @@ public final class BuildingBoardGuiService {
             }
             inventory.setItem(slot, ItemStackFactory.create(Material.OAK_SIGN, job.getTitle(), List.of(
                     "ID: " + job.getId(),
+                    "発注者: " + job.getRequesterName(),
                     "状態: " + job.getStatus().getDisplayName(),
                     "報酬総額: " + MathUtil.toFullPriceString(job.getTotalReward()),
                     "説明: " + this.getDescriptionSingleLinePreview(job.getDescription()),
