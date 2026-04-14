@@ -1,0 +1,16 @@
+database:
+  host: "127.0.0.1"
+  port: 3306
+  name: "buildingboard"
+  username: "root"
+  password: "password"
+  use-ssl: false
+  connection-parameters: "?characterEncoding=utf8&useUnicode=true&serverTimezone=UTC"
+
+defaults:
+  recruitment-deadline-days: 7
+  work-deadline-days: 30
+  force-complete-extra-days: 60
+
+tasks:
+  deadline-check-interval-seconds: 300

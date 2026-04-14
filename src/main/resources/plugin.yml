@@ -1,0 +1,17 @@
+name: BuildingBoard
+version: "${version}"
+api-version: 1.13
+main: net.azisaba.buildingboard.BuildingBoard
+commands:
+  buildingboard:
+    aliases: [bb]
+    permission: buildingboard.command
+    description: Manage building boards
+permissions:
+  buildingboard.command:
+    default: true
+  buildingboard.admin:
+    default: op
+depend:
+  - WorldEdit
+  - Vault
